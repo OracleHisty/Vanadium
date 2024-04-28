@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "vanadium",
+  "version": "${version}",
+  "name": "Vanadium",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "OracleHisty"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "sourcecode not available"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/vanadium/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.oraclehisty.vanadium.fabric.VanadiumFabric"
+    ],
+    "client": [
+      "com.oraclehisty.vanadium.fabric.client.VanadiumFabricClient"
+    ],
+    "fabric-datagen": [
+      "com.oraclehisty.vanadium.fabric.datagen.DatagenInitializer"
+    ]
+  },
+  "mixins": [
+    "vanadium.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.10",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
