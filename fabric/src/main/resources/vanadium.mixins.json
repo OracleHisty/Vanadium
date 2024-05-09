@@ -1,11 +1,13 @@
 {
   "required": true,
-  "package": "com.oraclehisty.vanadium.mixin",
+  "package": "com.oraclehisty.vanadium.fabric.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
   ],
   "mixins": [
+    "AnvilMenuMixin",
+    "ItemCombinerMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1
